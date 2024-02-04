@@ -1,0 +1,21 @@
+import sys
+from pathlib import Path
+from colorama import Fore, Style
+
+def display_directory_structure(directory_path, indent=0):
+    path = Path(directory_path)
+
+    if not path.exists() or not path.is_dir():
+        print(f"{Fore.RED}Помилка: Директорія не існує або не є директорією.{Style.RESET_ALL}")
+        return
+
+    for item in path.iterdir():
+        if item.is_dir():
+            print(Fore.BLUE + "  " * indent + f"📂 {item.name}" + Style.RESET_ALL)
+            display_directory_structure(item, indent + 1)
+        elif item.is_file():
+            print(Fore.GREEN + "  " * indent + f"📜 {item.name}" + Style.RESET_ALL)
+
+if __name__ == "__main__":
+    directory_path = r"C:\Users\Rai\Desktop\hw\hw4"
+    display_directory_structure(directory_path)
