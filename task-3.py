@@ -17,5 +17,8 @@ def display_directory_structure(directory_path, indent=0):
             print(Fore.GREEN + "  " * indent + f"📜 {item.name}" + Style.RESET_ALL)
 
 if __name__ == "__main__":
-    directory_path = r"C:\Users\Rai\Desktop\hw\hw4"
-    display_directory_structure(directory_path)
+    if len(sys.argv) != 2:
+        print(f"Usage: {sys.argv[0]} <absolute_directory_path>")
+    else:
+        directory_path = sys.argv[1]
+        display_directory_structure(directory_path)
