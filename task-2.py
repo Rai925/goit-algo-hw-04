@@ -9,7 +9,7 @@ def get_cats_info(path):
                     cat_info = {
                         'id': cat_data[0],
                         'name': cat_data[1],
-                        'age': int(cat_data[2])
+                        'age': cat_data[2]
                     }
                     cat_list.append(cat_info)
                 else:
