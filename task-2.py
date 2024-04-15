@@ -19,7 +19,7 @@ def get_cats_info(path):
 
     return cat_list
 
-path_to_cats_file = r'C:\Users\Rai\Desktop\hw\hw4\cats_data.txt'
+path_to_cats_file = get_cats_info("cats_data.txt")
 cats_info = get_cats_info(path_to_cats_file)
 
 for cat in cats_info:
