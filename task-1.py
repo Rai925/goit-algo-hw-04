@@ -25,7 +25,7 @@ def total_salary(path):
 
     return total_salary, average_salary
 
-file_path = r'C:\Users\Rai\Desktop\hw\hw4\list.txt'
+file_path = "list.txt"
 result = total_salary(file_path)
 
 if result is not None:

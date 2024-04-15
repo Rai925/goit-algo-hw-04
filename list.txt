@@ -1,0 +1,8 @@
+Alex Korp,3000
+Nikita Borisenko,2000
+Sitarama Raju,1000
+Olga Petrova,2500
+Maria Gonzalez,2800
+Hiroshi Tanaka,2200
+Elena Ivanova,2950
+Ahmed Ali,2300
